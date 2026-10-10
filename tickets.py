@@ -17,3 +17,27 @@ def validate_urgency(raw_urgency):
     if cleaned_urgency not in validate:
         raise ValueError("Invalid urgency. Must be low, medium, or high.")
     return cleaned_urgency
+
+def validate_users(raw_users):
+    cleaned_users = raw_users.strip()
+    try:
+        num_users = int(cleaned_users)
+    except ValueError:
+            raise ValueError("Affected users must be a valid whole number.")
+    if num_users <= 0:
+        raise ValueError("Affected users must be a positive integer greater than zero.")
+    return num_users
+
+def calculate_priority(urgency, affected_users):
+    if urgency == "high" and affected_users >= 10:
+        return "critical"
+    elif urgency == "high" or (urgency == "medium" and affected_users >= 5):
+        return "high"
+    elif urgency == "medium" or (urgency == "low" and affected_users >= 10):
+        return "medium"
+    else:
+        return "low"
+    
+def generate_id(current_tickets):
+    if current_tickets == "":
+        return "T001"
