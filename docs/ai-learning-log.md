@@ -14,4 +14,4 @@ Throughout the CampusFlow project, I learned how to develop a Python application
 6\. Command-Line Interfaces: I learned how to connect separate modules through a menu-driven application, handle errors, and provide users with a consistent interface.
 7\. Git and GitHub Collaboration: I learned about branches, commits, pull requests, issue tracking, code reviews, and safe integration of contributions from multiple developers.
 Overall, CampusFlow strengthened my understanding of building, testing, documenting, and collaborating on a real-world Python project.
-8\. Built-in python function: I learnt how to make use of the ".strip()" method.
+8\. Built-in python function: I learned how to make use of the ".strip()" method.
