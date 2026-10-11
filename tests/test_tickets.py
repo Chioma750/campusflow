@@ -82,6 +82,7 @@ class TestTicketCreation(unittest.TestCase):
             ("high", 10, "critical"),
             ("high", 1, "high"),
             ("low", 10, "high"),
+            ("medium", 10, "high"),
             ("medium", 2, "medium"),
             ("low", 3, "medium"),
             ("low", 2, "low"),
